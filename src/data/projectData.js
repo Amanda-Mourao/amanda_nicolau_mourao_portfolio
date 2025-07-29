@@ -1,0 +1,185 @@
+export const projects = [
+  {
+    id: 1,
+    title: "Hogwarts And The Hat",
+    description:
+      "Interaktive Harry Potter Anwendung mit dem sprechenden Hut. Eine magische Web-App mit React und modernem Design.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Tailwind CSS",
+      "MongoDB",
+      "JWT",
+    ],
+    deployedUrl: "https://hogwarts-and-the-hat.onrender.com/",
+    githubUrl: "https://github.com/Amanda-Mourao/hogwarts_and_the_hat_frontend",
+    image: "/hogwarts_and_the_hat_logo.png",
+    type: "fullstack",
+    features: [
+      "Interaktiver sprechender Hut",
+      "Harry Potter Thema und Design",
+      "Animationen und Übergänge",
+      "Benutzerfreundliche Navigation",
+      "Moderne React Komponenten",
+    ],
+    techDetails: {
+      frontend: "React mit funktionalen Komponenten",
+      styling: "CSS3 mit Tailwind, Flexbox und Grid",
+      deployment: "Render.com mit automatischem Deployment",
+      features: "Interactive UI mit Harry Potter Thema",
+    },
+  },
+  {
+    id: 2,
+    title: "Glowify Shop",
+    description:
+      "Moderne E-Commerce-Plattform für Beauty- und Kosmetikprodukte mit Warenkorb, Zahlungsabwicklung und Benutzerverwaltung.",
+    technologies: ["React", "Node.js", "Express", "PostgreSQL", "JWT"],
+    deployedUrl: "https://glowify-shop-frontend.onrender.com",
+    githubUrl: "https://github.com/Amanda-Mourao/glowify_shop_frontend",
+    image: "/glowify_logo.png",
+    type: "fullstack",
+    features: [
+      "Produktkatalog mit Suchfunktion",
+      "Warenkorb und Checkout-Prozess",
+      "Sichere Zahlungsabwicklung",
+      "Benutzerregistrierung und -anmeldung",
+      "Responsive Design für alle Geräte",
+    ],
+    techDetails: {
+      frontend: "React mit modernem UI/UX Design",
+      backend: "Node.js Express mit JWT Authentication",
+      database: "NeonDB für Benutzerdaten und Bestellungen",
+    },
+  },
+  {
+    id: 3,
+    title: "Code Buddy",
+    description:
+      "Lern-Plattform für Programmierung mit Terminbuchungen für Coding-Klassen und Tutorials für angehende Entwickler.",
+    technologies: ["React", "JS", "Tailwind CSS", "Live-Code-Editor", "Local Storage"],
+    deployedUrl: "https://code-buddy-coding-classes.onrender.com",
+    githubUrl: "https://github.com/Amanda-Mourao/code_buddy",
+    image: "/code_buddy_logo.png",
+    type: "frontend",
+    features: [
+      "Interaktive Coding-Klassen und Tutorials",
+      "Live-Code-Editor mit Syntax-Highlighting",
+      "Terminbuchung und Kalender-Übersicht",
+      "Übersicht der verfügbaren Kurse",
+      "Responsive Learning-Interface",
+    ],
+    techDetails: {
+      frontend: "React mit interaktivem Code-Editor",
+    },
+  },
+  {
+    id: 4,
+    title: "Trip Scheduler",
+    description:
+      "Reiseplanungs-Anwendung zur Organisation von Trips mit Terminplanung, Aktivitätsmanagement und Länderübersicht.",
+    technologies: ["React", "Tailwind CSS", "Local Storage", "Country API", "Leaflet"],
+    deployedUrl: "https://trip-scheduler-frontend.onrender.com",
+    githubUrl: "https://github.com/Amanda-Mourao/trip_scheduler_frontend",
+    image: "/trip_scheduler_logo.png",
+    type: "frontend",
+    features: [
+      "Interaktive Reiseplanung und Terminverwaltung",
+      "Aktivitäten und Sehenswürdigkeiten verwalten",
+      "Kartenintegration für Länderauswahl",
+      "Country-API Integration mit Länderdetails",
+      "Speicherung im Local Storage",
+    ],
+    techDetails: {
+      frontend: "React mit Tailwind CSS und responsive Design",
+      deployment: "Frontend auf Render.com",
+    },
+  },
+  {
+    id: 5,
+    title: "Your Personal Diary",
+    description:
+      "Persönliche Tagebuch-Anwendung zum Festhalten von Gedanken, Erlebnissen und Erinnerungen.",
+    technologies: ["React", "Node.js", "PostgreSQL", "Tailwind CSS", "NeonDB"],
+    deployedUrl: "https://your-personal-diary-frontend.onrender.com",
+    githubUrl: "https://github.com/Amanda-Mourao/your_personal_diary_frontend",
+    image: "/personal_diary_logo.png",
+    type: "fullstack",
+    features: [
+      "Private Tagebucheinträge erstellen und bearbeiten",
+      "Übersicht aller Einträge",
+      "Responsive Design für alle Geräte",
+      "Speicherung der Einträge in der Datenbank",
+      "Foto-Upload und Dokumentation"
+    ],
+    techDetails: {
+      frontend: "React mit Browser-Router und Hooks",
+      backend: "Node.js Express Server",
+      database: "Neon Datenbank für sichere Datenspeicherung",
+      deployment: "Frontend und Backend auf Render.com",
+    },
+  },
+  {
+    id: 6,
+    title: "Pokemon Battle Game",
+    description:
+      "Interaktives Pokemon-Kampfspiel mit punktzahlbasiertem Kampfsystem, Pokemon-Sammlung und Fortschrittsverfolgung.",
+    technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    deployedUrl: "https://pokemon-battle-frontend-gv5z.onrender.com",
+    githubUrl: "https://github.com/Amanda-Mourao/pokemon_battle_frontend",
+    image: "/pokemon_battle_logo.png",
+    type: "fullstack",
+    features: [
+      "Punktzahlbasiertes Kampfsystem",
+      "Pokemon-Sammlung und -Auswahl",
+      "Verschiedene Angriffe und Fähigkeiten",
+      "Spielerstatistiken und Fortschritt",
+      "Responsive Gaming-Interface",
+    ],
+    techDetails: {
+      frontend: "React mit Gaming-optimierter UI",
+      backend: "Node.js und Express für das Leaderboard",
+      database: "MongoDB für Spielerdaten und Statistiken",
+      deployment: "Frontend und Backend auf Render.com",
+    },
+  },
+];
+
+export const personalInfo = {
+  name: "Amanda Nicolau Mourao",
+  title: "Full-Stack Developer",
+  location: "Dortmund, Deutschland",
+  email: "a-mourao@web.de",
+  phone: "",
+  github: "https://github.com/Amanda-Mourao",
+  linkedin: "https://www.linkedin.com/in/amanda-mourao",
+  bio: "Leidenschaftliche Full-Stack Entwicklerin. Spezialisiert auf React, Tailwind, Node.js und MongoDB.",
+  resume: "/Lebenslauf.pdf",
+};
+
+export const skills = {
+  frontend: [
+    "React",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "React Native",
+  ],
+  cloud: ["AWS", "Azure", "Google Cloud", "Cloudinary", "Render", "Netlify"],
+  tools: [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Postman",
+    "Insomnia",
+    "Figma",
+    "Canva",
+    "Photopea",
+    "Npm",
+    "Vite",
+  ],
+  backend: ["Node.js", "Express.js", "REST APIs"],
+  database: ["MongoDB", "PostgreSQL"],
+  security: ["JWT", "Cookies"],
+};

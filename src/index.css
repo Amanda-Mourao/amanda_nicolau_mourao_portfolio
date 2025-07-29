@@ -1,0 +1,346 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cccccc;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #000000;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #000000;
+}
+
+@keyframes slideShow {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes geometricPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.02);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Montserrat', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.geometric-border {
+  border: 2px solid #ffffff;
+  border-radius: 0;
+}
+
+.geometric-shadow {
+  box-shadow: 4px 4px 0px #ffffff;
+}
+
+.geometric-hover {
+  transition: all 0.2s ease;
+}
+
+.geometric-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #ffffff;
+}
+
+.slider-animation {
+  animation: slideShow 25s infinite linear;
+}
+
+.slider-paused:hover {
+  animation-play-state: paused;
+}
+
+.text-gradient {
+  color: #ffffff;
+}
+
+.text-accent {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.bg-geometric {
+  background:
+    linear-gradient(90deg, transparent 49%, #ffffff 49%, #ffffff 51%, transparent 51%),
+    linear-gradient(0deg, transparent 49%, #ffffff 49%, #ffffff 51%, transparent 51%);
+  background-size: 20px 20px;
+  opacity: 0.03;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.project-card {
+  background: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.project-card:hover::before {
+  left: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 0 #ffffff;
+}
+
+.project-logo {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: contain;
+  object-position: center;
+  border: 2px solid #ffffff;
+  padding: 20px;
+  background: #000000;
+  transition: all 0.3s ease;
+}
+
+.project-logo:hover {
+  background: #ffffff;
+  transform: scale(1.05);
+}
+
+.project-logo[alt*="Code Buddy"] {
+  width: 100px !important;
+  height: 100px !important;
+  padding: 25px;
+}
+
+.btn-primary {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.2s ease;
+  border-radius: 0;
+}
+
+.btn-primary:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px #ffffff;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.2s ease;
+  border-radius: 0;
+}
+
+.btn-secondary:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.skill-tag {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  border-radius: 0;
+}
+
+.skill-tag:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translate(-1px, -1px);
+  box-shadow: 2px 2px 0px #ffffff;
+}
+
+@media (max-width: 768px) {
+  .project-logo {
+    width: 140px !important;
+    height: 140px !important;
+    padding: 15px;
+  }
+
+  .project-logo[alt*="Code Buddy"] {
+    width: 100px !important;
+    height: 100px !important;
+    padding: 12px;
+  }
+
+  .geometric-shadow {
+    box-shadow: 2px 2px 0px #ffffff;
+  }
+
+  .geometric-hover:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px #ffffff;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-logo {
+    width: 120px !important;
+    height: 120px !important;
+    padding: 10px;
+  }
+
+  .project-logo[alt*="Code Buddy"] {
+    width: 80px !important;
+    height: 80px !important;
+    padding: 8px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-geometric-pulse {
+  animation: geometricPulse 2s ease-in-out infinite;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  margin: 40px 0;
+}
+
+.divider-vertical {
+  width: 2px;
+  height: 60px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.form-input {
+  background: #000000;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 0;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 4px 4px 0px #ffffff;
+  transform: translate(-2px, -2px);
+}
+
+.form-input::placeholder {
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 12px;
+}
