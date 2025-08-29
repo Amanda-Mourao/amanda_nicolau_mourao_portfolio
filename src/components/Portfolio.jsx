@@ -12,6 +12,7 @@ import {
   Smartphone,
   Eye,
   Linkedin,
+  Download,
 } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 import ProjectPreview from "./ProjectPreview";
@@ -66,9 +67,12 @@ const Portfolio = () => {
             </div>
 
             <p className="text-lg text-white/80 mb-6 max-w-md">
-              Motivierte Full Stack Web & App Entwicklerin mit fundierten Kenntnissen in HTML, CSS und JavaScript, erworben durch ein intensives, projektbasiertes 
-              und teamorientiertes Bootcamp. Spezialisiert auf moderne Technologien - von Frontend bis Backend verwandle ich innovative Ideen in leistungsstarke
-              digitale Lösungen.
+              Motivierte Full Stack Web & App Entwicklerin mit fundierten
+              Kenntnissen in HTML, CSS und JavaScript, erworben durch ein
+              intensives, projektbasiertes und teamorientiertes Bootcamp.
+              Spezialisiert auf moderne Technologien - von Frontend bis Backend
+              verwandle ich innovative Ideen in leistungsstarke digitale
+              Lösungen.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -96,18 +100,30 @@ const Portfolio = () => {
               >
                 Kontakt
               </motion.button>
-              {/* {personalInfo.resume && (
+              {personalInfo.resume && (
                 <motion.a
-                  href={personalInfo.resume}
-                  download="Amanda_Nicolau_Mourao_Lebenslauf.pdf"
+                  href="/certificate_amanda_nicolau_mourao.pdf"
+                  download="certificate_amanda_nicolau_mourao.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full  hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center gap-2"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={(e) => {
+                    setTimeout(() => {
+                      const link = document.createElement("a");
+                      link.href = "/certificate_amanda_nicolau_mourao.pdf";
+                      link.download = "certificate_amanda_nicolau_mourao.pdf";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }, 100);
+                  }}
                 >
                   <Download className="w-4 h-4" />
-                  CV Download
+                  Zertifikat
                 </motion.a>
-              )} */}
+              )}
             </div>
           </motion.div>
 
@@ -247,9 +263,7 @@ const Portfolio = () => {
                   <div className="text-4xl mb-4 opacity-60 grayscale">
                     {item.icon}
                   </div>
-                  <h3 className="text-lg  mb-2 text-white">
-                    {item.title}
-                  </h3>
+                  <h3 className="text-lg  mb-2 text-white">{item.title}</h3>
                   <p className="text-sm text-gray-300 leading-relaxed ">
                     {item.desc}
                   </p>
@@ -320,9 +334,7 @@ const Portfolio = () => {
 
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-2xl text-white ">
-                      {project.title}
-                    </h3>
+                    <h3 className="text-2xl text-white ">{project.title}</h3>
                     <div className="p-2 bg-gray-800/60 rounded-xl text-white">
                       {getProjectIcon(project.type)}
                     </div>

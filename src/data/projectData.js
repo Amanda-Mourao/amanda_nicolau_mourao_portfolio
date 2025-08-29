@@ -3,14 +3,8 @@ export const projects = [
     id: 1,
     title: "Hogwarts And The Hat",
     description:
-      "Interaktive Harry Potter Anwendung mit dem sprechenden Hut. Eine magische Web-App mit React und modernem Design.",
-    technologies: [
-      "React",
-      "Node.js",
-      "Tailwind CSS",
-      "MongoDB",
-      "JWT",
-    ],
+      "Interaktive Harry Potter Anwendung mit dem sprechenden Hut. Eine magische App für Desktop und Browser.",
+    technologies: ["React", "Node.js", "Tailwind CSS", "MongoDB", "Electron"],
     deployedUrl: "https://hogwarts-and-the-hat.onrender.com/",
     githubUrl: "https://github.com/Amanda-Mourao/hogwarts_and_the_hat_frontend",
     image: "/hogwarts_and_the_hat_logo.png",
@@ -26,7 +20,8 @@ export const projects = [
       frontend: "React mit funktionalen Komponenten",
       styling: "CSS3 mit Tailwind, Flexbox und Grid",
       deployment: "Render.com mit automatischem Deployment",
-      features: "Interactive UI mit Harry Potter Thema",
+      features:
+        "Electron für die Umwandlung zur Desktop-App (https://github.com/Amanda-Mourao/hogwarts_and_the_hat_desktop_app)",
     },
   },
   {
@@ -57,7 +52,13 @@ export const projects = [
     title: "Code Buddy",
     description:
       "Lern-Plattform für Programmierung mit Terminbuchungen für Coding-Klassen und Tutorials für angehende Entwickler.",
-    technologies: ["React", "JS", "Tailwind CSS", "Live-Code-Editor", "Local Storage"],
+    technologies: [
+      "React",
+      "JS",
+      "Tailwind CSS",
+      "Live-Code-Editor",
+      "Local Storage",
+    ],
     deployedUrl: "https://code-buddy-coding-classes.onrender.com",
     githubUrl: "https://github.com/Amanda-Mourao/code_buddy",
     image: "/code_buddy_logo.png",
@@ -78,7 +79,13 @@ export const projects = [
     title: "Trip Scheduler",
     description:
       "Reiseplanungs-Anwendung zur Organisation von Trips mit Terminplanung, Aktivitätsmanagement und Länderübersicht.",
-    technologies: ["React", "Tailwind CSS", "Local Storage", "Country API", "Leaflet"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Local Storage",
+      "Country API",
+      "Leaflet",
+    ],
     deployedUrl: "https://trip-scheduler-frontend.onrender.com",
     githubUrl: "https://github.com/Amanda-Mourao/trip_scheduler_frontend",
     image: "/trip_scheduler_logo.png",
@@ -110,7 +117,7 @@ export const projects = [
       "Übersicht aller Einträge",
       "Responsive Design für alle Geräte",
       "Speicherung der Einträge in der Datenbank",
-      "Foto-Upload und Dokumentation"
+      "Foto-Upload und Dokumentation",
     ],
     techDetails: {
       frontend: "React mit Browser-Router und Hooks",
