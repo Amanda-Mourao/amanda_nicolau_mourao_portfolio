@@ -344,3 +344,35 @@ body {
   letter-spacing: 0.05em;
   font-size: 12px;
 }
+
+iframe {
+  background: transparent !important;
+  color-scheme: light !important;
+  isolation: isolate;
+}
+
+.iframe-container {
+  background: transparent;
+  color-scheme: light;
+}
+
+iframe * {
+  color-scheme: light;
+}
+
+iframe body {
+  background: initial !important;
+  color: initial !important;
+}
+
+iframe html,
+iframe body,
+iframe * {
+  background-color: initial !important;
+  color-scheme: light !important;
+}
+
+iframe[src*="trip-scheduler"] {
+  background: white !important;
+  color-scheme: light !important;
+}
